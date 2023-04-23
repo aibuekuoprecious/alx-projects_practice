@@ -1,6 +1,7 @@
 #ifndef SHELL_H
 #define SHELL_H
 
+/* system header files */
 #include <dirent.h>
 #include <signal.h>
 #include <stdio.h>
@@ -11,6 +12,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
+/* macros */
 #define BUFSIZE 1024
 #define DELIM " \t\r\n\a"
 
@@ -22,6 +24,9 @@ char *read_line(void);
 char **split_line(char *line, char *delim);
 int execute(char **args);
 char *find_path(char *prog);
+char *get_path_value(void);
+char *create_full_path(char *dir, char *prog);
+int find_executable(char *dir, char *prog);
 int launch(char *path, char **args);
 int is_builtin(char **args);
 int run_builtin(char **args);

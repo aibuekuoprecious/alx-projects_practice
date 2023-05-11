@@ -9,7 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-  data info[] = {INFO_INIT};
+  data info[] = {DATA_INIT};
   int fd = 2;
   
   fd += 3;

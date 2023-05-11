@@ -79,7 +79,7 @@ linked_list *add_node_end(linked_list **head, const char *str, int num)
  * @h: pointer to first node
  *
  * Return: size of list
- */
+ 
 size_t print_list(const linked_list *h)
 {
 	size_t i = 0;
@@ -92,7 +92,7 @@ size_t print_list(const linked_list *h)
 		i++;
 	}
 	return (i);
-}
+}*/
 
 /**
  * rm_node - removes a node at a specific index from a linked list
